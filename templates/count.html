@@ -1,0 +1,12 @@
+<h1>This page contains {{ count }} words</h1>
+<br><br>
+<a href="{% url 'about' %}">AboutThisPage</a>
+<br><br>
+<h2> TEXT-ENTERED</h2>
+{{ fulltext }}
+<br>
+<h3>Wordcounts : </h3>
+{% for word , counttotal in wordd %}
+{{ word }}  : {{ counttotal }}
+<br />
+{% endfor %}
